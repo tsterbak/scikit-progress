@@ -1,3 +1,5 @@
+from ._base import BaseProgressor
+
 from ._trees import TreesProgressor
 
 from ._linear import SGDProgressor
