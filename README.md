@@ -2,6 +2,8 @@
 
 Scikit-progress contains wrappers and replacements for common scikit-learn classes to add a progressbar. This should help bridging the gap between classical machine learning and deep learning
 
+
+
 ## Example
 ```
 from sklearn.ensemble import RandomForestClassifier
@@ -11,3 +13,14 @@ rf = TreesProgressor(RandomForestClassifier(n_estimators=100, max_depth=5, oob_s
 
 rf.fit(X, y)
 ```
+
+## Supported estimators
+With the **TreesProgressor**:
+- RandomForestClassifier
+- GradientBoostingClassifier
+- ExtraTreesClassifier
+With the **SGDProgressor**:
+- SGDClassifier
+With the **GLMProgressor**
+- LogisticRegression
+- Lasso
