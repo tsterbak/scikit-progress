@@ -12,15 +12,20 @@ from skprog.wrappers import TreesProgressor
 rf = TreesProgressor(RandomForestClassifier(n_estimators=100, max_depth=5, oob_score=True))
 
 rf.fit(X, y)
+
+rf.predict(X)
 ```
 
 ## Supported estimators
+
 With the **TreesProgressor**:
 - RandomForestClassifier
 - GradientBoostingClassifier
 - ExtraTreesClassifier
+
 With the **SGDProgressor**:
 - SGDClassifier
+
 With the **GLMProgressor**
 - LogisticRegression
 - Lasso
